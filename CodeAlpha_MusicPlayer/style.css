@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.player {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 320px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.song-info h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.song-info p {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.progress-container {
+  background-color: #eee;
+  height: 6px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.progress {
+  background: linear-gradient(90deg, #928dab, #1f1c2c);
+  height: 100%;
+  width: 0%;
+  border-radius: 5px;
+  transition: width 0.1s linear;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.2s ease;
+}
+
+.controls button:hover {
+  transform: scale(1.2);
+}
+
+#playBtn {
+  background-color: #1f1c2c;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.volume-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.volume-container input {
+  flex: 1;
+}
+
+.playlist {
+  list-style: none;
+  text-align: left;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.playlist li {
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+  transition: background-color 0.2s ease;
+}
+
+.playlist li:hover {
+  background-color: #f0f0f0;
+}
+
+.playlist li.active {
+  background-color: #1f1c2c;
+  color: #fff;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>My Image Gallery</h1>
+
+  <div class="filters">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="nature">Nature</button>
+    <button class="filter-btn" data-filter="travel">Travel</button>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/10/400/300" alt="Nature 1">
+    </div>
+    <div class="gallery-item" data-category="travel">
+      <img src="https://picsum.photos/id/11/400/300" alt="Travel 1">
+    </div>
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/12/400/300" alt="Nature 2">
+    </div>
+    <div class="gallery-item" data-category="travel">
+      <img src="https://picsum.photos/id/13/400/300" alt="Travel 2">
+    </div>
+    <div class="gallery-item" data-category="nature">
+      <img src="https://picsum.photos/id/14/400/300" alt="Nature 3">
+    </div>
+    <div class="gallery-item" data-category="travel">
+      <img src="https://picsum.photos/id/15/400/300" alt="Travel 3">
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <span class="prev-btn" id="prevBtn">&#10094;</span>
+    <img id="lightbox-img" src="" alt="">
+    <span class="next-btn" id="nextBtn">&#10095;</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
